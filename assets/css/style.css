@@ -89,7 +89,7 @@ div#card > img:first-child {
   position: absolute;
   left: 50%;
   transform: translate(-50%, 60%);
-  top: 25%;
+  top: 22%;
 }
 
 .attribution {
