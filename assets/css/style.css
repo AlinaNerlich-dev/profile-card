@@ -17,8 +17,8 @@ body {
   font-family: "Kumbh Sans", sans-serif;
   background-color: var(--primary-color-bg);
   background-repeat: no-repeat;
-  background-image: url(/assets/images/bg-pattern-top.svg),
-    url(/assets/images/bg-pattern-bottom.svg);
+  background-image: url(../images/bg-pattern-top.svg),
+    url(../images/bg-pattern-bottom.svg);
   background-position: right 40vw bottom 50vh, left 40vw top 50vh;
 }
 main {
@@ -44,14 +44,15 @@ p {
   height: 350px;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 div#card > img:first-child {
-  height: 40%;
+  height: 140px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
 #info {
-  height: 35%;
+  height: 123px;
   background-color: white;
 }
 #info > div {
@@ -66,7 +67,7 @@ div#card > img:first-child {
 }
 /* ------------- FACTS ----------  */
 #facts {
-  height: 25%;
+  height: 87px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -88,8 +89,9 @@ div#card > img:first-child {
   border: 5px solid white;
   position: absolute;
   left: 50%;
-  transform: translate(-50%, 60%);
-  top: 22%;
+  transform: translate(-50%, 50%);
+  top: 10%;
+  transform: translate(-50%, 50%);
 }
 
 .attribution {
