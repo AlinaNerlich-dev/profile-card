@@ -83,7 +83,7 @@ div#card > img:first-child {
 }
 /* ------------- VICTOR ----------  */
 #victor {
-  width: 10vw;
+  width: 100px;
   border-radius: 50%;
   border: 5px solid white;
   position: absolute;
