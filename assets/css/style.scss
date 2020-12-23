@@ -1,0 +1,114 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+@import "vars";
+@import "exten";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: $primary-color-bg;
+  background-repeat: no-repeat;
+  background-image: url("../images/bg-pattern-top.svg"),
+    url("../images/bg-pattern-bottom.svg");
+  background-position: right 45vw bottom 50vh, left 45vw top 50vh;
+}
+main {
+  height: 95vh;
+  @extend %flex-center;
+}
+
+/* ------------- CARD ----------  */
+.card {
+  width: 330px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 20px;
+
+  h1 {
+    @extend %style-bold;
+    display: inline-block;
+    margin-top: 1rem;
+  }
+
+  .background-img-card {
+    background-image: url("../images/bg-pattern-card.svg");
+    height: 140px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    position: relative;
+  }
+}
+
+/* ------------- INFO ----------  */
+.info {
+  height: 123px;
+
+  div {
+    padding: 3.5rem 0 1rem 0;
+    text-align: center;
+
+    p:first-of-type {
+      display: inline-block;
+      color: $blue-grey;
+    }
+
+    p:nth-of-type(2) {
+      color: $blue-grey;
+      margin-top: 0.3rem;
+      font-size: 0.8rem;
+      font-weight: $font-middle-weight;
+    }
+  }
+}
+/* ------------- FACTS ----------  */
+.facts {
+  height: 87px;
+  @extend %flex-center;
+  justify-content: space-around;
+  padding: 1.5rem;
+  background-color: white;
+  border-top: 1px solid lightgrey;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+
+  div {
+    display: flex;
+    flex-direction: column-reverse;
+
+    p {
+      @extend %style-bold;
+    }
+
+    h2 {
+      font-size: 0.6rem;
+      margin-top: 0.2rem;
+      letter-spacing: 0.1rem;
+      font-weight: $font-middle-weight;
+      color: $blue-grey;
+    }
+  }
+}
+
+/* ------------- VICTOR ----------  */
+#victor {
+  width: 100px;
+  border-radius: 50%;
+  border: 5px solid white;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

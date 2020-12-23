@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
     <link
       rel="icon"
@@ -15,33 +14,38 @@
     <title>Frontend Mentor | Profile card component</title>
   </head>
   <body>
+
     <main>
-      <div id="card">
-        <img src="assets/images/bg-pattern-card.svg" alt="background card" />
-        <img id="victor" src="assets/images/image-victor.jpg" alt="victor" />
-        <section id="info">
+      <article class="card">
+        <section class="background-img-card">
+          <img id="victor" src="assets/images/image-victor.jpg" alt="victor" />
+        </section>
+        
+        <section class="info">
           <div>
-            <h2>Victor Crest</h2>
-            <p id="age">26</p>
+            <h1>Victor Crest</h1>
+            <p class="age">26</p>
             <p>London</p>
           </div>
         </section>
-        <section id="facts">
+
+        <section class="facts">
           <div>
-            <h2>80K</h2>
-            <p>Followers</p>
+            <h2>Followers</h2>
+            <p>80K</p>
           </div>
           <div>
-            <h2>803K</h2>
-            <p>Likes</p>
+            <h2>Likes</h2>
+            <p>803K</p>
           </div>
           <div>
-            <h2>1.4K</h2>
-            <p>Photos</p>
+            <h2>Photos</h2>
+            <p>1.4K</p>
           </div>
         </section>
-      </div>
+      </article>
     </main>
+
     <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"

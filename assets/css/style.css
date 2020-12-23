@@ -1,103 +1,140 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
-
-:root {
-  --primary-color-bg: hsl(185, 75%, 39%);
-  --headline-color: hsl(229, 23%, 23%);
-  --blue-grey: hsl(227, 10%, 46%);
-  --dark-grey: hsl(0, 0%, 59%);
-  --font-middle-weight: 400;
-  --font-bold-weight: 700;
+.card h1, .facts div p {
+  color: #2d3248;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 1rem;
 }
+
+main, .facts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 * {
   padding: 0;
   margin: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
+
 body {
   font-family: "Kumbh Sans", sans-serif;
-  background-color: var(--primary-color-bg);
+  background-color: #19a2ae;
   background-repeat: no-repeat;
-  background-image: url("../images/bg-pattern-top.svg"),
-    url("../images/bg-pattern-bottom.svg");
-  background-position: right 40vw bottom 50vh, left 40vw top 50vh;
+  background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+  background-position: right 45vw bottom 50vh, left 45vw top 50vh;
 }
+
 main {
   height: 95vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
-h2 {
-  color: var(--headline-color);
-  font-size: 1rem;
-  font-weight: var(--font-bold-weight);
-}
-p {
-  color: var(--blue-grey);
-  margin-top: 0.3rem;
-  font-size: 0.8rem;
-  font-weight: var(--font-middle-weight);
-}
+
 /* ------------- CARD ----------  */
-#card {
+.card {
   width: 330px;
   height: 350px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  border-radius: 20px;
 }
-div#card > img:first-child {
+
+.card h1 {
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.card .background-img-card {
+  background-image: url("../images/bg-pattern-card.svg");
   height: 140px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  position: relative;
 }
-#info {
+
+/* ------------- INFO ----------  */
+.info {
   height: 123px;
-  background-color: white;
 }
-#info > div {
+
+.info div {
   padding: 3.5rem 0 1rem 0;
   text-align: center;
 }
-#info > div > h2 {
-  display: inline;
+
+.info div p:first-of-type {
+  display: inline-block;
+  color: #6a6f81;
 }
-#age {
-  display: inline;
+
+.info div p:nth-of-type(2) {
+  color: #6a6f81;
+  margin-top: 0.3rem;
+  font-size: 0.8rem;
+  font-weight: 400;
 }
+
 /* ------------- FACTS ----------  */
-#facts {
+.facts {
   height: 87px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  text-align: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding: 1.5rem;
   background-color: white;
   border-top: 1px solid lightgrey;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
-#facts > div > p {
-  font-size: 0.6rem;
-  letter-spacing: 0.1rem;
+
+.facts div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
 }
+
+.facts div h2 {
+  font-size: 0.6rem;
+  margin-top: 0.2rem;
+  letter-spacing: 0.1rem;
+  font-weight: 400;
+  color: #6a6f81;
+}
+
 /* ------------- VICTOR ----------  */
 #victor {
   width: 100px;
   border-radius: 50%;
   border: 5px solid white;
   position: absolute;
+  top: 100%;
   left: 50%;
-  transform: translate(-50%, 50%);
-  top: 10%;
-  transform: translate(-50%, 50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 .attribution {
   font-size: 11px;
   text-align: center;
 }
+
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: #3e52a3;
 }
+/*# sourceMappingURL=style.css.map */
